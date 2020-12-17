@@ -148,6 +148,38 @@ body {
     opacity: 0;
 }
 
+#projects {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: #999;
+    opacity: 0;
+    animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -moz-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -webkit-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -o-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    animation-delay: 3.8s;
+}
+
+#projects-message {
+    padding-left: 4rem;
+    opacity: 0;
+    animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -moz-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -webkit-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -o-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    animation-delay: 3.8s;
+    
+
+}
+
 #style-linkedin {
     color: #2867b2;
 }
