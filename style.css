@@ -1,0 +1,198 @@
+body {
+    text-align: center;
+}
+
+#contents {
+    display: inline-block;
+    text-align: left;
+}
+
+#welcome-message {
+    font-size: 4rem;
+    padding: 4rem 0 0 4rem;
+}
+
+#sub-welcome-message {
+    font-size: 2rem;
+    color: #999;
+    padding: 0 4rem 2rem 4rem;   
+    max-width: 72rem;
+}
+
+#sub-1 {
+    display: inline-block;
+    opacity: 0;
+    animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -moz-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -webkit-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -o-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    animation-delay: 1.4s;
+}
+
+#sub-2 {
+    display: inline-block;
+    opacity: 0;
+    padding-top: 2rem;
+    animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -moz-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -webkit-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -o-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    animation-delay: 2.1s;
+}
+
+#sub-3 {
+    display: inline-block;
+    opacity: 0;
+    padding-top: 2rem;
+    animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -moz-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -webkit-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -o-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    animation-delay: 2.8s;
+}
+
+#thank-you-message {
+    font-size: 2rem;
+    color: #999;
+    padding: 4rem 4rem 2rem 4rem;   
+    max-width: 72rem;
+    display: inline-block;
+    opacity: 0;
+    animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -moz-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -webkit-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -o-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    animation-delay: 3.8s;
+    
+}
+
+#style-travelers {
+    color: #ff0000;
+}
+
+#style-travelers:hover {
+    animation: highlight-travelers 0.3s ease forwards;
+    -moz-animation: highlight-travelers 0.3s ease forwards;
+    -webkit-animation: highlight-travelers 0.3s ease forwards;
+    -o-animation: highlight-travelers 0.3s ease forwards;
+}
+
+@keyframes highlight-travelers {
+    0% { color: #ff0000; }
+    100% { color: #fff;
+           background-color: #f00; }
+}
+
+#style-data-science {
+    color: rgb(0, 200, 0);
+}
+
+#style-machine-learning {
+    color: rgb(0, 132, 255);
+}
+
+#style-ut {
+    color: #bf5700;
+}
+
+#style-ut:hover {
+    animation: highlight-ut 0.3s ease forwards;
+    -moz-animation: highlight-ut 0.3s ease forwards;
+    -webkit-animation: highlight-ut 0.3s ease forwards;
+    -o-animation: highlight-ut 0.3s ease forwards;
+}
+
+@keyframes highlight-ut {
+    0% { color: #bf5700; }
+    100% { color: #fff;
+           background-color: #bf5700; }
+}
+
+.last-char {
+    display: inline-block;
+    animation: 
+        appear 0.1s ease,
+        slide-down 0.1s ease;
+    -moz-animation: appear 0.1s ease,
+        slide-down 0.1s ease;
+    -webkit-animation: appear 0.1s ease,
+        slide-down 0.1s ease;
+    -o-animation: appear 0.1s ease,
+        slide-down 0.1s ease;
+}
+
+@keyframes slide-down {
+    0% { transform: translateY(-30%); }
+    100% { transform: translateY(0); }
+}
+
+.social-links {
+    font-size: 2rem;
+    padding: 0 0 0 4rem;
+    opacity: 0;
+}
+
+#style-linkedin {
+    color: #2867b2;
+}
+
+#style-linkedin:hover {
+    animation: highlight-linkedin 0.3s ease forwards;
+    -moz-animation: highlight-linkedin 0.3s ease forwards;
+    -webkit-animation: highlight-linkedin 0.3s ease forwards;
+    -o-animation: highlight-linkedin 0.3s ease forwards;
+}
+
+@keyframes highlight-linkedin {
+    0% { color: #2867b2; }
+    100% { color: #fff;
+           background-color: #2867b2; }
+}
+
+#style-github {
+    color: #6e5494;
+}
+
+#style-github:hover {
+    animation: highlight-github 0.3s ease forwards;
+    -moz-animation: highlight-github 0.3s ease forwards;
+    -webkit-animation: highlight-github 0.3s ease forwards;
+    -o-animation: highlight-github 0.3s ease forwards;
+}
+
+@keyframes highlight-github {
+    0% { color: #6e5494; }
+    100% { color: #fff;
+           background-color: #6e5494; }
+}
+
+@keyframes appear {
+    0% { opacity: 0 }
+    100% { opacity: 100% }
+}
+
+a:hover {
+    text-decoration: none;
+}
+/* 
+@keyframes expand {
+    0% { width: 0 }
+    50% { width: 20% }
+    100% { width: 100%}
+} */
