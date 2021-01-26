@@ -19,6 +19,23 @@ body {
     max-width: 72rem;
 }
 
+#spotify-message {
+    font-size: 1.5rem;
+    color: #999;
+    padding: 0rem 4rem 2rem 4rem;   
+    max-width: 72rem;
+    opacity: 0;
+    animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -moz-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -webkit-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    -o-animation: appear 1.2s ease forwards,
+               slide-down 1.2s ease forwards;
+    animation-delay: 4.6s;
+}
+
 #sub-1 {
     display: inline-block;
     opacity: 0;
@@ -66,7 +83,7 @@ body {
 #thank-you-message {
     font-size: 2rem;
     color: #999;
-    padding: 4rem 4rem 2rem 4rem;   
+    padding: 4rem 4rem 4rem 4rem;   
     max-width: 72rem;
     display: inline-block;
     opacity: 0;
