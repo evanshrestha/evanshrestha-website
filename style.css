@@ -117,7 +117,7 @@ body {
 @keyframes highlight-amazon {
     0% { color: #ff9900; }
     100% { color: #fff;
-           background-color: #f00; }
+           background-color: #ff9900; }
 }
 
 
