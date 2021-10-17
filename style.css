@@ -103,6 +103,24 @@ body {
     color: #ff0000;
 }
 
+#style-amazon {
+    color: #ff9900;
+}
+
+#style-amazon:hover {
+    animation: highlight-amazon 0.3s ease forwards;
+    -moz-animation: highlight-amazon 0.3s ease forwards;
+    -webkit-animation: highlight-amazon 0.3s ease forwards;
+    -o-animation: highligh-amazon 0.3s ease forwards;
+}
+
+@keyframes highlight-amazon {
+    0% { color: #ff9900; }
+    100% { color: #fff;
+           background-color: #f00; }
+}
+
+
 #style-travelers:hover {
     animation: highlight-travelers 0.3s ease forwards;
     -moz-animation: highlight-travelers 0.3s ease forwards;
