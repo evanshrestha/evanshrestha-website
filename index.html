@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./style.css" type="text/css">
-        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-        <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
-        <title>Hi, I'm Evan.</title>
-    </head>
-    <body>
-        <div id='contents'>
-            <h1 id='welcome-message'>
-                Hi, I'm Evan.
-            </h1>
-            <p id='sub-welcome-message'>
-                <span id='sub-1'>I'm currently working full-time at <a href='https://www.amazon.com' id='style-amazon'>Amazon</a> after working at <a href='https://www.travelers.com' id='style-travelers'>Travelers</a> for a few years and have a master's degree in computer science from <a href='https://www.utexas.edu' id='style-ut'>UT Austin</a>.</span> 
-                <span id='sub-2'>I'm interested in <a id='style-machine-learning' href='https://en.wikipedia.org/wiki/Machine_learning'>machine learning</a> and <a id='style-data-science' href='https://en.wikipedia.org/wiki/Data_science'>data science</a>.</span>
-                <span id='sub-3'>Check out my <a id='style-linkedin' href="https://www.linkedin.com/in/evan-shrestha-a9a968b2/">LinkedIn</a> and <a id='style-github' href="https://github.com/evanshrestha">GitHub</a> to see more, or you can take a look at my <a id='style-resume' href='./ShresthaEvanResume.pdf'>resume</a>.</span>
-            </p>
-            <h2 id='projects-message'>Projects</h2>
-            <p id='projects'>
-                <span>
-                    <a href='https://dashify.evanshrestha.com'>Dashify</a>: Spotify metrics. Re-work coming soon. <a href="https://github.com/evanshrestha/dashify">GitHub</a>.
-                </span> <br />
-                <span>
-                    <a href='https://github.com/evanshrestha/spotifyStatus'>spotifyStatus</a>: A widget to display my Spotify status.
-                </span> <br />
-                <span>
-                    <a href='https://arxiv.org/pdf/2103.00657.pdf'>Achieving Competitive Play Through Bottom-Up Approach in Semantic Segmentation</a>: A SuperTuxKart bot.
-                </span> <br />
-                <span>
-                    <a href='./bert_syn_paper.pdf'>BERT-based Transfer Learning with Synonym Augmentation for Question Answering</a>: Applying synonym augmentation to NLP.
-                </span>
-                
-            </p>
-            <p id='thank-you-message'>
-                Thanks for stopping by!
-            </p>
-<!--
-            <div id='spotify-message'>
-                <p>
-                    By the way, here's what I'm listening to on Spotify:
-                </p>
-                <iframe width="600" height="300" src="https://spotify.evanshrestha.com" frameborder="0" ></iframe>
-            </div> 
--->
-        </div>
-        <script src='welcome-script.js'></script>
-    </body>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
+    <title>Hi, I'm Evan.</title>
+</head>
+
+<body>
+    <div id='header'>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">Other Stuff</a>
+    </div>
+    <h1 id='welcome-message'>
+        Hi, I'm Evan.
+    </h1>
+    <div id='contents'>
+        <p id='sub-welcome-message'>
+            <span id='sub-1'>I'm currently working full-time at <a href='https://www.amazon.com'
+                    id='style-amazon'>Amazon</a> after working at <a href='https://www.travelers.com'
+                    id='style-travelers'>Travelers</a> for a few years and have a master's degree in computer science
+                from <a href='https://www.utexas.edu' id='style-ut'>UT Austin</a>.</span>
+            <span id='sub-2'>I'm interested in <a id='style-machine-learning'
+                    href='https://en.wikipedia.org/wiki/Machine_learning'>machine learning</a> and <a
+                    id='style-data-science' href='https://en.wikipedia.org/wiki/Data_science'>data science</a>.</span>
+            <span id='sub-3'>Check out my <a id='style-linkedin'
+                    href="https://www.linkedin.com/in/evan-shrestha-a9a968b2/">LinkedIn</a> and <a id='style-github'
+                    href="https://github.com/evanshrestha">GitHub</a> to see more, or you can take a look at my <a
+                    id='style-resume' href='./ShresthaEvanResume.pdf'>resume</a>.</span>
+        </p>
+        <h2 id='projects-message'>Projects</h2>
+        <p id='projects'>
+            <span>
+                <a href='https://dashify.evanshrestha.com'>Dashify</a>: Spotify metrics. Re-work coming soon. <a
+                    href="https://github.com/evanshrestha/dashify">GitHub</a>.
+            </span> <br />
+            <span>
+                <a href='https://github.com/evanshrestha/spotifyStatus'>spotifyStatus</a>: A widget to display my
+                Spotify status.
+            </span> <br />
+            <span>
+                <a href='https://arxiv.org/pdf/2103.00657.pdf'>Achieving Competitive Play Through Bottom-Up Approach in
+                    Semantic Segmentation</a>: A SuperTuxKart bot.
+            </span> <br />
+            <span>
+                <a href='./bert_syn_paper.pdf'>BERT-based Transfer Learning with Synonym Augmentation for Question
+                    Answering</a>: Applying synonym augmentation to NLP.
+            </span>
+
+        </p>
+        <p id='thank-you-message'>
+            Thanks for stopping by!
+        </p>
+    </div>
+    <script src='welcome-script.js'></script>
+</body>
+
 </html>

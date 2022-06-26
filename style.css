@@ -9,30 +9,68 @@ body {
 
 #welcome-message {
     font-size: 4rem;
-    padding: 4rem 0 0 4rem;
+    padding: 2rem 0 2rem 4rem;
+}
+
+#about-message {
+    font-size: 4rem;
+    padding: 2rem 0 2rem 4rem;
+}
+
+#header {
+    font-size: 2rem;
+    padding: 2rem 0 0 0;
+    text-align: center;
+}
+
+#header a {
+    padding: 0 24px;
+    color: #999;
+}
+
+#header a:hover {
+    padding: 0 24px;
+    animation: highlight-header 0.3s ease forwards;
+    -moz-animation: highlight-header 0.3s ease forwards;
+    -webkit-animation: highlight-header 0.3s ease forwards;
+    -o-animation: highligh-header 0.3s ease forwards;
+}
+
+@keyframes highlight-header {
+    0% {
+        color: #999;
+    }
+
+    100% {
+        color: #777;
+    }
+}
+
+td {
+    padding: 0.5rem;
 }
 
 #sub-welcome-message {
     font-size: 2rem;
     color: #999;
-    padding: 0 4rem 2rem 4rem;   
+    padding: 0 4rem 2rem 4rem;
     max-width: 72rem;
 }
 
 #spotify-message {
     font-size: 1.5rem;
     color: #999;
-    padding: 0rem 4rem 2rem 4rem;   
+    padding: 0rem 4rem 2rem 4rem;
     max-width: 72rem;
     opacity: 0;
     animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -moz-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -webkit-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -o-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     animation-delay: 4.6s;
 }
 
@@ -40,13 +78,13 @@ body {
     display: inline-block;
     opacity: 0;
     animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -moz-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -webkit-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -o-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     animation-delay: 1.4s;
 }
 
@@ -55,13 +93,13 @@ body {
     opacity: 0;
     padding-top: 2rem;
     animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -moz-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -webkit-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -o-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     animation-delay: 2.1s;
 }
 
@@ -70,37 +108,59 @@ body {
     opacity: 0;
     padding-top: 2rem;
     animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -moz-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -webkit-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -o-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     animation-delay: 2.8s;
 }
 
 #thank-you-message {
     font-size: 2rem;
     color: #999;
-    padding: 4rem 4rem 4rem 4rem;   
+    padding: 4rem 4rem 4rem 4rem;
     max-width: 72rem;
     display: inline-block;
     opacity: 0;
     animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -moz-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -webkit-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -o-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     animation-delay: 3.8s;
-    
+
 }
 
 #style-travelers {
     color: #ff0000;
+}
+
+#style-spotify {
+    color: #1DB954;
+}
+
+#style-spotify:hover {
+    animation: highlight-spotify 0.3s ease forwards;
+    -moz-animation: highlight-spotify 0.3s ease forwards;
+    -webkit-animation: highlight-spotify 0.3s ease forwards;
+    -o-animation: highligh-spotify 0.3s ease forwards;
+}
+
+@keyframes highlight-spotify {
+    0% {
+        color: #1DB954;
+    }
+
+    100% {
+        color: #fff;
+        background-color: #1DB954;
+    }
 }
 
 #style-amazon {
@@ -115,9 +175,14 @@ body {
 }
 
 @keyframes highlight-amazon {
-    0% { color: #ff9900; }
-    100% { color: #fff;
-           background-color: #ff9900; }
+    0% {
+        color: #ff9900;
+    }
+
+    100% {
+        color: #fff;
+        background-color: #ff9900;
+    }
 }
 
 
@@ -129,9 +194,14 @@ body {
 }
 
 @keyframes highlight-travelers {
-    0% { color: #ff0000; }
-    100% { color: #fff;
-           background-color: #f00; }
+    0% {
+        color: #ff0000;
+    }
+
+    100% {
+        color: #fff;
+        background-color: #f00;
+    }
 }
 
 #style-data-science {
@@ -146,9 +216,14 @@ body {
 }
 
 @keyframes highlight-data-science {
-    0% { color: rgb(0, 200, 0); }
-    100% { color: #fff;
-           background-color: rgb(0, 200, 0); }
+    0% {
+        color: rgb(0, 200, 0);
+    }
+
+    100% {
+        color: #fff;
+        background-color: rgb(0, 200, 0);
+    }
 }
 
 
@@ -164,9 +239,14 @@ body {
 }
 
 @keyframes highlight-machine-learning {
-    0% { color: rgb(0, 132, 255); }
-    100% { color: #fff;
-           background-color: rgb(0, 132, 255); }
+    0% {
+        color: rgb(0, 132, 255);
+    }
+
+    100% {
+        color: #fff;
+        background-color: rgb(0, 132, 255);
+    }
 }
 
 
@@ -182,14 +262,19 @@ body {
 }
 
 @keyframes highlight-ut {
-    0% { color: #bf5700; }
-    100% { color: #fff;
-           background-color: #bf5700; }
+    0% {
+        color: #bf5700;
+    }
+
+    100% {
+        color: #fff;
+        background-color: #bf5700;
+    }
 }
 
 .last-char {
     display: inline-block;
-    animation: 
+    animation:
         appear 0.1s ease,
         slide-down 0.1s ease;
     -moz-animation: appear 0.1s ease,
@@ -201,8 +286,13 @@ body {
 }
 
 @keyframes slide-down {
-    0% { transform: translateY(-30%); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(-30%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .social-links {
@@ -217,13 +307,13 @@ body {
     color: #999;
     opacity: 0;
     animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -moz-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -webkit-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -o-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     animation-delay: 3.8s;
 }
 
@@ -231,15 +321,15 @@ body {
     padding-left: 4rem;
     opacity: 0;
     animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -moz-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -webkit-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     -o-animation: appear 1.2s ease forwards,
-               slide-down 1.2s ease forwards;
+        slide-down 1.2s ease forwards;
     animation-delay: 3.8s;
-    
+
 
 }
 
@@ -255,9 +345,14 @@ body {
 }
 
 @keyframes highlight-linkedin {
-    0% { color: #2867b2; }
-    100% { color: #fff;
-           background-color: #2867b2; }
+    0% {
+        color: #2867b2;
+    }
+
+    100% {
+        color: #fff;
+        background-color: #2867b2;
+    }
 }
 
 #style-github {
@@ -272,9 +367,14 @@ body {
 }
 
 @keyframes highlight-github {
-    0% { color: #6e5494; }
-    100% { color: #fff;
-           background-color: #6e5494; }
+    0% {
+        color: #6e5494;
+    }
+
+    100% {
+        color: #fff;
+        background-color: #6e5494;
+    }
 }
 
 #style-resume {
@@ -289,20 +389,31 @@ body {
 }
 
 @keyframes highlight-resume {
-    0% { color: rgb(0, 132, 255); }
-    100% { color: #fff;
-           background-color: rgb(0, 132, 255); }
+    0% {
+        color: rgb(0, 132, 255);
+    }
+
+    100% {
+        color: #fff;
+        background-color: rgb(0, 132, 255);
+    }
 }
 
 
 @keyframes appear {
-    0% { opacity: 0 }
-    100% { opacity: 100% }
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 100%
+    }
 }
 
 a:hover {
     text-decoration: none;
 }
+
 /* 
 @keyframes expand {
     0% { width: 0 }
