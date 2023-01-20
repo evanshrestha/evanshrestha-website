@@ -137,6 +137,10 @@ td {
 
 }
 
+#style-discord {
+    color: #5865F2;
+}
+
 #style-travelers {
     color: #ff0000;
 }
@@ -150,6 +154,25 @@ td {
     -moz-animation: highlight-spotify 0.3s ease forwards;
     -webkit-animation: highlight-spotify 0.3s ease forwards;
     -o-animation: highligh-spotify 0.3s ease forwards;
+}
+
+
+#style-discord:hover {
+    animation: highlight-discord 0.3s ease forwards;
+    -moz-animation: highlight-discord 0.3s ease forwards;
+    -webkit-animation: highlight-discord 0.3s ease forwards;
+    -o-animation: highligh-discord 0.3s ease forwards;
+}
+
+@keyframes highlight-discord {
+    0% {
+        color: #5865F2;
+    }
+
+    100% {
+        color: #fff;
+        background-color: #5865F2;
+    }
 }
 
 @keyframes highlight-spotify {
