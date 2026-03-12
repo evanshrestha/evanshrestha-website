@@ -137,6 +137,28 @@ td {
 
 }
 
+#style-figma {
+    color: #F24E1E;
+}
+
+#style-figma:hover {
+    animation: highlight-figma 0.3s ease forwards;
+    -moz-animation: highlight-figma 0.3s ease forwards;
+    -webkit-animation: highlight-figma 0.3s ease forwards;
+    -o-animation: highlight-figma 0.3s ease forwards;
+}
+
+@keyframes highlight-figma {
+    0% {
+        color: #F24E1E;
+    }
+
+    100% {
+        color: #fff;
+        background-color: #F24E1E;
+    }
+}
+
 #style-discord {
     color: #5865F2;
 }
